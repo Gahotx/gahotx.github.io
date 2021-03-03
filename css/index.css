@@ -4957,11 +4957,18 @@ _:future,
 #waline .vcards .vcard .vcontent.expand:after {
   z-index: 22;
 }
+ {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
 #vcomment textarea {
-  background: url("img/comment_bg.png") 100% 100% no-repeat;
+  background: url("/img/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
-  background-image: none;
+  background-position-y: 200px;
 }
 .fireworks {
   position: fixed;
@@ -5038,6 +5045,27 @@ mjx-container[jax='CHTML'][display='true'] {
 #article-container .aplayer ol li:before,
 #article-container .aplayer ul li:before {
   content: none;
+}
+#vcomment .vcards .vcard {
+  padding: 15px 20px 0 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 0 4px 1px rgba(0,0,0,0.12);
+  box-shadow: 0 0 4px 1px rgba(0,0,0,0.12);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#vcomment .vcards .vcard:hover {
+  -webkit-box-shadow: 0 0 8px 3px rgba(0,0,0,0.12);
+  box-shadow: 0 0 8px 3px rgba(0,0,0,0.12);
+}
+#vcomment .vcards .vcard .vh .vcard {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 #article-container .btn-center {
   margin: 0 0 1rem;
