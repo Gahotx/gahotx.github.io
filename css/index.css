@@ -3712,6 +3712,7 @@ _:future,
   -o-animation: sub_menus 0.3s 0.1s ease both;
   -ms-animation: sub_menus 0.3s 0.1s ease both;
   animation: sub_menus 0.3s 0.1s ease both;
+  border-radius: 5px;
 }
 #nav .menus_items .menus_item .menus_item_child:before {
   position: absolute;
@@ -3733,6 +3734,12 @@ _:future,
   width: 100%;
   color: var(--font-color) !important;
   text-shadow: none !important;
+}
+#nav .menus_items .menus_item .menus_item_child li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+#nav .menus_items .menus_item .menus_item_child li:last-child {
+  border-radius: 0 0 5px 5px;
 }
 #nav.hide-menu #toggle-menu {
   display: inline-block !important;
@@ -4957,15 +4964,13 @@ _:future,
 #waline .vcards .vcard .vcontent.expand:after {
   z-index: 22;
 }
- {
+#vcomment textarea {
+  background: url("/img/comment_bg.png") 100% 100% no-repeat;
   -webkit-transition: all 0.2s ease-in-out 0s;
   -moz-transition: all 0.2s ease-in-out 0s;
   -o-transition: all 0.2s ease-in-out 0s;
   -ms-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
-}
-#vcomment textarea {
-  background: url("/img/comment_bg.png") 100% 100% no-repeat;
 }
 #vcomment textarea:focus {
   background-position-y: 200px;
@@ -5066,6 +5071,22 @@ mjx-container[jax='CHTML'][display='true'] {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat {
+  float: right;
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  background-color: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 0.7rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.v[data-class=v] .vcards .vcard .vh .vmeta .vat:hover {
+  background-color: var(--btn-hover-color);
 }
 #article-container .btn-center {
   margin: 0 0 1rem;
