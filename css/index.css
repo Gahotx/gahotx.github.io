@@ -3429,7 +3429,7 @@ blockquote footer cite:before {
   font-size: 30px;
 }
 #page-header.not-home-page {
-  height: 20rem;
+  height: 310px;
 }
 @media screen and (max-width: 768px) {
   #page-header.not-home-page {
@@ -3448,7 +3448,7 @@ blockquote footer cite:before {
   }
 }
 #page-header.post-bg {
-  height: 20rem;
+  height: 310px;
 }
 @media screen and (max-width: 768px) {
   #page-header.post-bg {
